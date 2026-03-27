@@ -1,11 +1,65 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<div class="app-header">
+		<h1 class="heading-one app-header-logo">PageCraftAI</h1>
+		<p class="font-xsmall app-header-badge">Free tier — 20 pages/month</p>
+	</div>
+
+	<div class="app-body">
+		<main>
+			<section class="form-panel">
+				<div class="form-panel-header">
+					<h2 class="heading-two form-panel-title">Describe your product</h2>
+					<p class="body-large form-panel-subtitle">Fill in the fields below and we'll generate a complete, professional landing page in seconds.</p>
+				</div>
+				<div class="form-divider"></div>
+				<form>
+					<div class="form-group">
+						<label for="product-name" class="font-small">Product Name<span class="font-xsmall">Required</span></label>
+        				<input id="product-name" class="font-medium" placeholder = "What is the name of your product" type="text" />
+					</div>
+					<div class="form-group">
+						<label for="product-desc" class="font-small">Product Description <span class="font-xs">Required</span></label>
+						<textarea id="product-desc" class="font-medium" placeholder="Provide a one sentence description of the product" />
+					</div>
+					<div class="form-group">
+						<label for="target-audience" class="font-small">Target Audience <span class="font-xsmall">Required</span></label>
+						<input id="target-audience"  class="font-medium" placeholder="Who is your target audience?" type="text" />
+					</div>
+					<div class="form-group">
+						<label for="key-benefits" class="font-small">Key Benefits <span class="font-xsmall">Required</span></label>
+						<div class="benefits-row">
+							<input id="key-benefits" class="font-medium" placeholder="Key Benefit 1" class="" />
+							<input id="key-benefits" class="font-medium" placeholder="Key Benefit 2" class="" />
+							<input id="key-benefits" class="font-medium" placeholder="Key Benefit 3" class="" />
+						</div>
+					</div>	
+					<div class="form-group">
+						<label for="tone-of-voice" class="font-small">Tone of Voice</label>
+						<select class="form-select font-medium">
+							<option selected>Professional</option>
+							<option>Friendly & Conversational</option>
+							<option>Bold & Urgent</option>
+							<option>Playful & Witty</option>
+							<option>Minimalist & Premium</option>
+						</select>
+					</div>
+					
+					<button class="btn-primary font-btn">Generate My Landing Page</button>
+					<div class="btn-secondary-row">
+						<button class="btn-success">Copied</button>
+						<button class="btn-secondary">Download .html</button>
+					</div>
+				</form>
+			</section>
+			<section class="preview-panel">
+
+			</section>
+		</main>
+		
+	</div>
+
 </Layout>
