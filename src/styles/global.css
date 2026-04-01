@@ -15,6 +15,7 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-feature-settings: "liga" on;
     -moz-font-feature-settings: "liga" on;
+	background-color: var(--gray-100);
 }
 
 .heading-one {
@@ -30,7 +31,6 @@ body {
     font-weight: 800;
     line-height: 1.15;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
 }
 
 
@@ -117,7 +117,12 @@ body {
     --gray-500: #6B7280;
     --gray-400: #9CA3AF;
     --gray-300: #D1D5DB;
+    --gray-200: #E5E7EB;
     --gray-100: #F3F4F6;
     --gray-50: #F9FAFB;
+}
+
+.padding-standard {
+    padding: 2rem 4rem;
 }
 
