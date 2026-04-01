@@ -66,8 +66,8 @@ import Layout from '../layouts/Layout.astro';
 						<input class="btn-primary font-btn" type="submit" value="Generate My Landing Page" />
 						
 						<div class="btn-secondary-row">
-							<button class="btn-success">Copied</button>
-							<button class="btn-secondary">Download .html</button>
+							<button class="btn-success btn-secondary font-secondary-btn">Copy HTML File</button>
+							<button class="btn-download btn-secondary font-secondary-btn">Download HTML File</button>
 						</div>
 					</form>
 				</section>
@@ -203,6 +203,31 @@ import Layout from '../layouts/Layout.astro';
 		border: 0;
 	}
 
+	.btn-secondary-row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.btn-success {
+		margin-bottom: 8px;
+	}
+
+	.btn-download {
+		margin-bottom: 16px;
+	}
+
+	.btn-secondary {
+		height: 40px;
+		border: 1.5px solid var(--primary-indigo-900);
+		background-color: #FFFFFF;
+		color: var(--primary-indigo-900);
+		border-radius: 8px;
+    	cursor: pointer;
+	}
+
+	.form-panel {
+		border-bottom: 1.5px solid var(--gray-200);
+	}
 	
 	/* Media Queries */
 
