@@ -89,6 +89,11 @@ body {
     color: #fff;
 }
 
+.font-secondary-btn {
+    font-size: 13px;
+    font-weight: 600;
+}
+
 .preview-cta-text {
     font-size: 13px;
     font-weight: 700;
