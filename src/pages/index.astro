@@ -63,7 +63,8 @@ import Layout from '../layouts/Layout.astro';
 							</select>
 						</div>
 						
-						<button class="btn-primary font-btn">Generate My Landing Page</button>
+						<input class="btn-primary font-btn" type="submit" value="Generate My Landing Page" />
+						
 						<div class="btn-secondary-row">
 							<button class="btn-success">Copied</button>
 							<button class="btn-secondary">Download .html</button>
@@ -191,6 +192,15 @@ import Layout from '../layouts/Layout.astro';
 	#key-benefits-one,
 	#key-benefits-two {
 		margin-bottom: 8px;
+	}
+
+	.btn-primary {
+		width: 100%;
+		height: 40px;
+		background-color: var(--accent-rose-500);
+		border-radius: 8px;
+		margin-bottom: 8px;
+		border: 0;
 	}
 
 	
