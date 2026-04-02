@@ -10,73 +10,71 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 
 		<div class="app-body">
-			<main>
-				<section class="form-panel">
-					<div class="form-panel-header">
-						<h2 class="heading-two form-panel-title">Describe your product</h2>
-						<p class="body-large form-panel-subtitle">Fill in the fields below and we'll generate a complete, professional landing page in seconds.</p>
+			<section class="form-panel">
+				<div class="form-panel-header">
+					<h2 class="heading-two form-panel-title">Describe your product</h2>
+					<p class="body-large form-panel-subtitle">Fill in the fields below and we'll generate a complete, professional landing page in seconds.</p>
+				</div>
+				<div class="form-divider"></div>
+				<form>
+					<div class="form-group">
+						<label for="product-name" class="font-small field-label">Product Name<span class="font-xsmall required-field">Required</span></label>
+						<input id="product-name" class="font-medium" placeholder = "What is the name of your product" type="text" />
 					</div>
-					<div class="form-divider"></div>
-					<form>
-						<div class="form-group">
-							<label for="product-name" class="font-small field-label">Product Name<span class="font-xsmall required-field">Required</span></label>
-							<input id="product-name" class="font-medium" placeholder = "What is the name of your product" type="text" />
-						</div>
-						<div class="form-group">
-							<label for="product-desc" class="font-small field-label">Product Description <span class="font-xs required-field">Required</span></label>
-							<textarea id="product-desc" class="font-medium" placeholder="Provide a one sentence description of the product" />
-						</div>
-						<div class="form-group">
-							<label for="target-audience" class="font-small field-label">Target Audience <span class="font-xsmall required-field">Required</span></label>
-							<input id="target-audience"  class="font-medium" placeholder="Who is your target audience?" type="text" />
-						</div>
-						<div class="form-group">
-                            <fieldset>
-								<span class="font-xsmall required-field">Required</span>
-                                <legend class="font-small field-label">Key Benefits</legend>
-                                <div class="benefits-row">
-                                    <div class="benefits-row-one">
-                                        <label  for="key-benefits-one" class="font-small visually-hidden">Key Benefit 1</label>
-                                        <input id="key-benefits-one" class="font-medium" placeholder="Key Benefit 1" />
-                                    </div>
-                                    <div class="benefits-row-two">
-                                        <label  for="key-benefits-two" class="font-small visually-hidden">Key Benefit 2</label>
-                                        <input id="key-benefits-two" class="font-medium" placeholder="Key Benefit 2" />
-                                        
-                                    </div>
-                                    <div class="benefits-row-three">
-                                        <label  for="key-benefits-three" class="font-small visually-hidden">Key Benefit 3</label>
-                                        <input id="key-benefits-three" class="font-medium" placeholder="Key Benefit 3" />
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </div>  
+					<div class="form-group">
+						<label for="product-desc" class="font-small field-label">Product Description <span class="font-xs required-field">Required</span></label>
+						<textarea id="product-desc" class="font-medium" placeholder="Provide a one sentence description of the product" />
+					</div>
+					<div class="form-group">
+						<label for="target-audience" class="font-small field-label">Target Audience <span class="font-xsmall required-field">Required</span></label>
+						<input id="target-audience"  class="font-medium" placeholder="Who is your target audience?" type="text" />
+					</div>
+					<div class="form-group">
+						<fieldset>
+							<span class="font-xsmall required-field">Required</span>
+							<legend class="font-small field-label">Key Benefits</legend>
+							<div class="benefits-row">
+								<div class="benefits-row-one">
+									<label  for="key-benefits-one" class="font-small visually-hidden">Key Benefit 1</label>
+									<input id="key-benefits-one" class="font-medium" placeholder="Key Benefit 1" />
+								</div>
+								<div class="benefits-row-two">
+									<label  for="key-benefits-two" class="font-small visually-hidden">Key Benefit 2</label>
+									<input id="key-benefits-two" class="font-medium" placeholder="Key Benefit 2" />
+									
+								</div>
+								<div class="benefits-row-three">
+									<label  for="key-benefits-three" class="font-small visually-hidden">Key Benefit 3</label>
+									<input id="key-benefits-three" class="font-medium" placeholder="Key Benefit 3" />
+								</div>
+							</div>
+						</fieldset>
+					</div>  
 
-						<div class="form-group">
-							<label for="tone-of-voice" class="font-small field-label">Tone of Voice</label>
-							<select class="form-select font-medium">
-								<option selected>Professional</option>
-								<option>Friendly & Conversational</option>
-								<option>Bold & Urgent</option>
-								<option>Playful & Witty</option>
-								<option>Minimalist & Premium</option>
-							</select>
-						</div>
-						
-						<input class="btn-primary font-btn" type="submit" value="Generate My Landing Page" />
-						
-						<div class="btn-secondary-row">
-							<button class="btn-success btn-secondary font-secondary-btn">Copy HTML File</button>
-							<button class="btn-download btn-secondary font-secondary-btn">Download HTML File</button>
-						</div>
-					</form>
-				</section>
-				
-				<section class="preview-panel">
-					<p>Preview appears here after generating.</p>
-					<iframe id="previewFrame" class="preview-frame"></iframe>
-				</section>
-			</main>
+					<div class="form-group">
+						<label for="tone-of-voice" class="font-small field-label">Tone of Voice</label>
+						<select class="form-select font-medium">
+							<option selected>Professional</option>
+							<option>Friendly & Conversational</option>
+							<option>Bold & Urgent</option>
+							<option>Playful & Witty</option>
+							<option>Minimalist & Premium</option>
+						</select>
+					</div>
+					
+					<input class="btn-primary font-btn" type="submit" value="Generate My Landing Page" />
+					
+					<div class="btn-secondary-row">
+						<button class="btn-success btn-secondary font-secondary-btn">Copy HTML File</button>
+						<button class="btn-download btn-secondary font-secondary-btn">Download HTML File</button>
+					</div>
+				</form>
+			</section>
+			
+			<section class="preview-panel">
+				<p>Preview appears here after generating.</p>
+				<iframe id="previewFrame" class="preview-frame"></iframe>
+			</section>
 		</div>
 	</div>
 
@@ -106,9 +104,16 @@ import Layout from '../layouts/Layout.astro';
 		display: none;
 	}
 
+	.app-body {
+		display: grid;
+		grid-template-columns: 1fr;
+
+	}
+
 	.form-panel {
 		padding: 16px 18px;
 		margin-bottom: 16px;
+
 	}
 
 	.form-panel-title {
@@ -240,9 +245,22 @@ import Layout from '../layouts/Layout.astro';
 	
 	/* Media Queries */
 
-	@media screen(min-width: 768px) {
-		box-shadow: 0 2px 16px rgba(15, 27, 76, .07);
-		border-radius: 14px;
+	@media screen and (min-width: 768px) {
+		.app-body {
+			grid-template-columns: 1fr 50%;
+			box-shadow: 0 2px 16px rgba(15, 27, 76, .07);
+			border-radius: 14px;
+			overflow: hidden;
+
+		}
+
+		.form-panel {
+			padding: 40px;
+		}
+
+		.preview-panel p {
+			margin-top: 40px;
+		}
 	}
 </style>
 
