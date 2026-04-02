@@ -110,6 +110,7 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</section> -->
 				<section class="preview-panel">
+					<p>Preview appears here after generating.</p>
 					<iframe id="previewFrame" class="preview-frame"></iframe>
 				</section>
 			</main>
@@ -142,11 +143,8 @@ import Layout from '../layouts/Layout.astro';
 		display: none;
 	}
 
-	.app-body {
-		padding: 16px 18px;
-	}
-
 	.form-panel {
+		padding: 16px 18px;
 		margin-bottom: 16px;
 	}
 
@@ -226,7 +224,23 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.form-panel {
-		border-bottom: 1.5px solid var(--gray-200);
+	}
+
+	.preview-panel {
+		background-color: var(--gray-50);
+		border-top: 1.5px solid var(--gray-200);
+		padding: 16px;
+		min-height: 180px;
+	}
+
+	.preview-panel p {
+		text-align: center;
+	}
+	
+
+
+	iframe {
+		border: 0;
 	}
 	
 	/* Media Queries */
