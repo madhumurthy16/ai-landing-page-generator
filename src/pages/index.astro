@@ -71,44 +71,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</form>
 				</section>
-				<!-- <section class="preview-panel">
-					<div class="preview-label">
-						<p class="font-small">Live preview</p>
-					</div>
-					<div class="preview-url-bar">
-						<div class="preview-url-bar"></div>
-						<p class="preview-url-text"></p>
-					</div>
-					<div class="preview-window">
-						<div class="preview-window-hero">
-							<p class="preview-hero-eyebrow"></p>
-							<h2 class="preview-hero-title"></h2>
-							<p class="preview-hero-desc"></p>
-							<button class="btn-primary font-btn">Get Started Free</button>
-						</div>
-						<div class="preview-benefits">
-							<p class="benefits-title font-medium font-medium-bold"></p>
-							<div class="preview-cards">
-								<div class="preview-card">
-									<h4 class="heading-four"></h4>
-									<p class="font-xsmall"></p>
-								</div>
-								<div class="preview-card">
-									<h4 class="heading-four"></h4>
-									<p class="font-xsmall"></p>
-								</div>
-								<div class="preview-card">
-									<h4 class="heading-four"></h4>
-									<p class="font-xsmall"></p>
-								</div>
-							</div>
-						</div>
-						<div class="preview-cta-strip">
-							<p class="preview-cta-text"></p>
-							<button class="preview-cta-text">Get Started Free</button>
-						</div>
-					</div>
-				</section> -->
+				
 				<section class="preview-panel">
 					<p>Preview appears here after generating.</p>
 					<iframe id="previewFrame" class="preview-frame"></iframe>
@@ -171,6 +134,33 @@ import Layout from '../layouts/Layout.astro';
 		margin-bottom: 8px;
 	}
 
+	input,
+	textarea,
+	select {
+		border: 1.5px solid var(--gray-300);
+		border-radius: 7px;
+		background-color: #F9FAFB;
+		padding: 0 10px;
+		color: var(--gray-900);
+		outline: none;
+		transition: border-color 0.3s ease;
+	}
+
+	input:focus,
+	textarea:focus,
+	select:focus {
+		border: 1.5px solid var(--primary-indigo-900);
+	}
+
+	input, 
+	select {
+		height: 36px;
+	}
+
+	textarea {
+		height: 50px;
+	}
+
 	fieldset {
 		border: 0;
 	}
@@ -188,6 +178,12 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	#key-benefits-one,
+	#key-benefits-two,
+	#key-benefits-three {
+		width: 100%;
+	}
+
+	#key-benefits-one,
 	#key-benefits-two {
 		margin-bottom: 8px;
 	}
@@ -196,6 +192,7 @@ import Layout from '../layouts/Layout.astro';
 		width: 100%;
 		height: 40px;
 		background-color: var(--accent-rose-500);
+		color: #FFFFFF;
 		border-radius: 8px;
 		margin-bottom: 8px;
 		border: 0;
@@ -237,8 +234,6 @@ import Layout from '../layouts/Layout.astro';
 		text-align: center;
 	}
 	
-
-
 	iframe {
 		border: 0;
 	}
