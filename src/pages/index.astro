@@ -1,9 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <Layout>
-	<div class="app-container">
+	<Hero
+		headline="Build Stunning Landing Pages in Seconds"
+		subheadline="Describe your product, choose your tone, and let AI generate a complete, professional landing page — no design skills needed."
+		ctaLabel="Try It Free"
+		ctaHref="#generate"
+	/>
+	<div class="app-container" id="generate">
 		<div class="app-header">
 			<h1 class="heading-one app-header-logo">PageCraftAI</h1>
 			<p class="font-xsmall app-header-badge">Free tier — 20 pages/month</p>
@@ -82,7 +89,7 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 	.app-container {
-		margin: 4rem 4rem;
+		margin: 2rem 4rem 4rem;
 		background: #FFFFFF;
 		border: 1.5px solid var(--gray-200);
 		border-radius: 10px;
@@ -262,5 +269,6 @@ import Layout from '../layouts/Layout.astro';
 			margin-top: 40px;
 		}
 	}
+
 </style>
 
