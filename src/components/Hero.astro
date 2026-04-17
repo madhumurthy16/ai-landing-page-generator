@@ -1,0 +1,75 @@
+---
+interface Props {
+	headline: string;
+	subheadline: string;
+	ctaLabel: string;
+	ctaHref?: string;
+}
+
+const { headline, subheadline, ctaLabel, ctaHref = '#' } = Astro.props;
+---
+
+<section class="hero">
+	<div class="hero-content">
+		<h1 class="heading-one hero-headline">{headline}</h1>
+		<p class="font-medium hero-subheadline">{subheadline}</p>
+		<a href={ctaHref} class="btn-primary font-btn hero-cta">{ctaLabel}</a>
+	</div>
+</section>
+
+<style>
+	.hero {
+		background-color: var(--primary-indigo-900);
+		padding: 48px 24px;
+		text-align: center;
+	}
+
+	.hero-content {
+		max-width: 680px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.hero-headline {
+		color: #ffffff;
+	}
+
+	.hero-subheadline {
+		color: var(--primary--indigo-100);
+	}
+
+	.hero-cta {
+		display: inline-block;
+		margin-top: 8px;
+		padding: 0 28px;
+		height: 44px;
+		line-height: 44px;
+		background-color: var(--accent-rose-500);
+		color: #ffffff;
+		border-radius: 8px;
+		text-decoration: none;
+		transition: background-color 0.2s ease, transform 0.2s ease;
+	}
+
+	.hero-cta:hover {
+		background-color: var(--accent-rose-400);
+		transform: translateY(-1px);
+	}
+
+	@media screen and (min-width: 768px) {
+		.hero {
+			padding: 80px 40px;
+		}
+
+		.hero-headline {
+			font-size: 48px;
+		}
+
+		.hero-subheadline {
+			font-size: 16px;
+		}
+	}
+</style>
