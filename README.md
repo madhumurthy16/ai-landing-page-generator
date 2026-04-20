@@ -1,51 +1,56 @@
-<<<<<<< HEAD
-# ai-landing-page-generator
-A landing page generator app 
-=======
-# Astro Starter Kit: Basics
+# AI Landing Page Generator
 
-```sh
-npm create astro@latest -- --template basics
+An AI-powered web application that generates complete, ready-to-use landing pages from a simple product description. Fill out a short form about your product and get a full landing page you can copy or download instantly.
+
+## Features
+
+- **AI-Powered Generation** — Describe your product name, target audience, key benefits, and tone of voice to generate a tailored landing page
+- **Two-Panel Layout** — Side-by-side form and live preview for a smooth generation experience
+- **Copy & Download** — Export your generated landing page as clean HTML
+
+## Tech Stack
+
+- **Framework:** [Astro v6](https://astro.build/) (static site)
+- **Styling:** Custom CSS design system with CSS custom properties
+- **AI:** Claude API (Anthropic)
+- **Languages:** Astro, CSS, JavaScript
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js v18+
+- An [Anthropic API key](https://console.anthropic.com/)
+
+### Installation
+
+```bash
+git clone https://github.com/madhumurthy16/ai-landing-page-generator.git
+cd ai-landing-page-generator
+npm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Run Locally
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+```bash
+npm run dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Open [http://localhost:4321](http://localhost:4321) in your browser.
 
-## 🧞 Commands
+## Commands
 
-All commands are run from the root of the project, from a terminal:
+All commands are run from the root of the project:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command | Action |
+| --- | --- |
+| `npm install` | Install dependencies |
+| `npm run dev` | Start dev server at `localhost:4321` |
+| `npm run build` | Build production site to `./dist/` |
+| `npm run preview` | Preview production build locally |
 
-## 👀 Want to learn more?
+## Built with Claude Code
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
->>>>>>> d4a3d62 ("Initial commit from Astro")
+The hero section of this app was built using **[Claude Code](https://claude.ai/code)**, Anthropic's agentic coding tool. Claude Code was used to scaffold the component layout, implement the design system tokens, and iterate on the two-panel UI — dramatically accelerating the development process while keeping the code clean and maintainable.
+
+A `CLAUDE.md` file is included at the root of the repo to provide Claude Code with project-specific context, architecture guidance, and dev commands whenever it's working in this codebase.
